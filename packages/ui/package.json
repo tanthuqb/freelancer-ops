@@ -9,9 +9,11 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "eslint": "^9",
     "react": "latest",
     "react-dom": "latest",
     "typescript": "latest"
