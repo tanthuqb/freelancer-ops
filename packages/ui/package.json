@@ -6,14 +6,15 @@
     ".": "./src/index.tsx"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "echo \"No tests yet\""
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "eslint": "^9",
+    "eslint": "^9.39.2",
     "react": "latest",
     "react-dom": "latest",
     "typescript": "latest"

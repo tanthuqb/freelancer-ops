@@ -6,6 +6,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "test": "turbo run test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "validate": "turbo run lint && npm run format:check",
@@ -28,5 +29,5 @@
     "packages/*",
     "services/*"
   ],
-  "packageManager": "npm@10.0.0"
+  "packageManager": "pnpm@9.15.4"
 }
