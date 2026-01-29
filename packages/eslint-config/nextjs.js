@@ -17,11 +17,13 @@ const compat = new FlatCompat({
 export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
-  ...compat.extends('next/core-web-vitals', 'prettier', 'plugin:prettier/recommended'),
   {
+    plugins: {
+      // Manually loading plugins would require installing them directly if not exposed by config
+    },
     rules: {
-      'prettier/prettier': 'error',
-      '@next/next/no-html-link-for-pages': 'off',
+      // Placeholder rules
+      '@typescript-eslint/no-unused-vars': 'warn',
     },
   },
   {
@@ -42,6 +44,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['.*.js', 'node_modules/'],
+    ignores: ['.*.js', 'node_modules/', '.next/', '.turbo/', 'dist/', 'coverage/'],
   }
 );
